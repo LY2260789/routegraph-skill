@@ -1,0 +1,79 @@
+{
+  "name": "manuscript_clean",
+  "font": "Arial",
+  "font_sizes": {
+    "panel_label": 13,
+    "panel_title": 13,
+    "box": 9,
+    "model": 12,
+    "bottom_label": 13
+  },
+  "line_weights": {
+    "blue_solid": 1.15,
+    "purple_dashed": 1.45,
+    "black_solid": 1.1
+  },
+  "colors": {
+    "blue": [
+      30,
+      100,
+      210
+    ],
+    "light_blue": [
+      190,
+      220,
+      250
+    ],
+    "purple": [
+      105,
+      45,
+      175
+    ],
+    "light_purple": [
+      222,
+      214,
+      242
+    ],
+    "gray": [
+      225,
+      230,
+      235
+    ],
+    "light_gray": [
+      235,
+      238,
+      242
+    ],
+    "dark_gray": [
+      65,
+      65,
+      65
+    ],
+    "orange": [
+      235,
+      145,
+      20
+    ],
+    "light_orange": [
+      255,
+      238,
+      200
+    ],
+    "black": [
+      0,
+      0,
+      0
+    ],
+    "white": [
+      255,
+      255,
+      255
+    ]
+  },
+  "text_rules": {
+    "default_subscript_simplification": true,
+    "pm25_output": "PM2.5",
+    "delta_powershell": "$Delta = [char]0x0394",
+    "word_wrap": false
+  }
+}
