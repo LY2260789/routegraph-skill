@@ -48,7 +48,13 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ## Critical Rules
 
 - Arrow logic has highest priority. Wrong source, target, direction, missing critical arrows, or mismatched arrow style are high-severity failures.
-- Prefer segmented routes for complex arrows:
+- Draw each logical arrow as one continuous PowerPoint shape whenever possible.
+  - Use `Add-LineArrow` for direct straight arrows.
+  - Use `Add-ElbowArrow` for simple L-shaped or Z-shaped routes.
+  - Use `Add-PolylineArrow` for controlled multi-bend routes.
+  - Do not build one logical arrow from several independent `Add-LineSegment` calls plus a final arrowhead unless there is a true branching junction.
+  - For dashed arrows, this is mandatory: a dashed route must normally be one shape so the dash pattern is continuous across bends.
+- Avoid this old segmented pattern for a single logical arrow:
 
 ```powershell
 Add-LineSegment
@@ -66,7 +72,8 @@ $Delta = [char]0x0394
 Add-TextBox $slide "$Delta PM2.5 air quality" 340 213 190 22 13 $true $black
 ```
 
-- Use helper functions consistently: `RGB`, `Add-TextBox`, `Add-Box`, `Add-LineSegment`, and `Add-LineArrow`.
+- Use helper functions consistently: `RGB`, `Add-TextBox`, `Add-Box`, `Add-LineArrow`, `Add-ElbowArrow`, and `Add-PolylineArrow`. Use `Add-LineSegment` only for non-arrow helper lines or true branching trunks.
+- Cast PowerPoint COM line weights and freeform coordinates to `[single]` so generated scripts remain compatible with PowerShell 7.
 - Keep generated scripts easy to modify. Prefer semantic coordinate variables for complex diagrams.
 
 ## Resource Guide
@@ -81,6 +88,7 @@ Read only the resource needed for the task:
 - `assets/templates/four_panel_route_template.ps1`: starter for multi-panel technical route diagrams.
 - `assets/templates/horizontal_pipeline_template.ps1`: starter for simple horizontal pipelines.
 - `assets/templates/pm25_counterfactual_framework.ps1`: detailed PM2.5 counterfactual framework example.
+- `assets/templates/continuous_arrow_regression.ps1`: focused regression deck for straight, elbow, multi-bend dashed, and true-branch routes.
 - `assets/style_presets/manuscript_clean.json`: restrained manuscript-style colors and typography.
 - `assets/examples/`: lightweight examples for expected use cases.
 

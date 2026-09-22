@@ -26,7 +26,7 @@ function Add-Box($slide, $text, $x, $y, $w, $h, $fillColor, $lineColor, $fontSiz
     $shape = $slide.Shapes.AddShape(1, $x, $y, $w, $h)
     $shape.Fill.ForeColor.RGB = $fillColor
     $shape.Line.ForeColor.RGB = $lineColor
-    $shape.Line.Weight = 1.15
+    $shape.Line.Weight = [single]1.15
     $shape.TextFrame.TextRange.Text = $text
     $shape.TextFrame.TextRange.Font.Name = "Arial"
     $shape.TextFrame.TextRange.Font.Size = $fontSize
@@ -49,7 +49,7 @@ function Add-Box($slide, $text, $x, $y, $w, $h, $fillColor, $lineColor, $fontSiz
 function Add-LineSegment($slide, $x1, $y1, $x2, $y2, $color, $dash = $false, $weight = 1.2) {
     $line = $slide.Shapes.AddConnector(1, $x1, $y1, $x2, $y2)
     $line.Line.ForeColor.RGB = $color
-    $line.Line.Weight = $weight
+    $line.Line.Weight = [single]$weight
     $line.Line.BeginArrowheadStyle = 1
     $line.Line.EndArrowheadStyle = 1
     if ($dash) { $line.Line.DashStyle = 4 }
@@ -59,13 +59,45 @@ function Add-LineSegment($slide, $x1, $y1, $x2, $y2, $color, $dash = $false, $we
 function Add-LineArrow($slide, $x1, $y1, $x2, $y2, $color, $dash = $false, $weight = 1.2) {
     $line = $slide.Shapes.AddConnector(1, $x1, $y1, $x2, $y2)
     $line.Line.ForeColor.RGB = $color
-    $line.Line.Weight = $weight
+    $line.Line.Weight = [single]$weight
     $line.Line.BeginArrowheadStyle = 1
     $line.Line.EndArrowheadStyle = 3
     $line.Line.EndArrowheadLength = 2
     $line.Line.EndArrowheadWidth = 2
     if ($dash) { $line.Line.DashStyle = 4 }
     return $line
+}
+
+function Add-ElbowArrow($slide, $x1, $y1, $x2, $y2, $color, $dash = $false, $weight = 1.2) {
+    $line = $slide.Shapes.AddConnector(2, $x1, $y1, $x2, $y2)
+    $line.Line.ForeColor.RGB = $color
+    $line.Line.Weight = [single]$weight
+    $line.Line.BeginArrowheadStyle = 1
+    $line.Line.EndArrowheadStyle = 3
+    $line.Line.EndArrowheadLength = 2
+    $line.Line.EndArrowheadWidth = 2
+    if ($dash) { $line.Line.DashStyle = 4 }
+    return $line
+}
+
+function Add-PolylineArrow($slide, $points, $color, $dash = $false, $weight = 1.2) {
+    if ($points.Count -lt 2) { throw "Add-PolylineArrow needs at least two points." }
+
+    $builder = $slide.Shapes.BuildFreeform(1, [single]$points[0][0], [single]$points[0][1])
+    for ($i = 1; $i -lt $points.Count; $i++) {
+        $builder.AddNodes(1, 1, [single]$points[$i][0], [single]$points[$i][1])
+    }
+
+    $shape = $builder.ConvertToShape()
+    $shape.Fill.Visible = 0
+    $shape.Line.ForeColor.RGB = $color
+    $shape.Line.Weight = [single]$weight
+    $shape.Line.BeginArrowheadStyle = 1
+    $shape.Line.EndArrowheadStyle = 3
+    $shape.Line.EndArrowheadLength = 2
+    $shape.Line.EndArrowheadWidth = 2
+    if ($dash) { $shape.Line.DashStyle = 4 }
+    return $shape
 }
 
 $ppt = New-Object -ComObject PowerPoint.Application
@@ -155,9 +187,12 @@ Add-LineArrow   $slide $busCX $botCY 700 $botCY $blue $false $arrowBlueWeight
 Add-TextBox $slide "~" 708 137 18 22 16 $false $black
 Add-Box $slide "XGBoost" 724 124 78 36 $white $blue 12 $true $black
 
-Add-LineSegment $slide 472 134 528 134 $purple $true $arrowPurpleWeight
-Add-LineSegment $slide 528 134 528 205 $purple $true $arrowPurpleWeight
-Add-LineArrow   $slide 528 205 580 205 $purple $true $arrowPurpleWeight
+Add-PolylineArrow $slide @(
+    @(472, 134),
+    @(528, 134),
+    @(528, 205),
+    @(580, 205)
+) $purple $true $arrowPurpleWeight
 
 # Panel D
 Add-TextBox $slide "D." 815 8 30 20 13 $true $black
@@ -175,6 +210,7 @@ $topY  = 133
 $midY  = 145
 $botY  = 181
 
+# True one-to-two branch: separate shapes are intentional here.
 Add-LineSegment $slide 802 $midY $forkX $midY $purple $true $arrowPurpleWeight
 Add-LineSegment $slide $forkX $topY $forkX $botY $purple $true $arrowPurpleWeight
 Add-LineArrow   $slide $forkX $topY 848 $topY $purple $true $arrowPurpleWeight

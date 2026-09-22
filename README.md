@@ -10,6 +10,8 @@ It is designed for scientific and engineering workflows where the final output s
 - Requires an arrow topology table before generating code.
 - Generates PowerShell scripts that use PowerPoint COM to draw editable `.pptx` files.
 - Prioritizes correct arrow source, target, direction, and route over decorative polish.
+- Keeps each logical arrow in one continuous PowerPoint shape whenever the route allows it.
+- Uses native elbow connectors or editable freeform polylines for bent and multi-bend arrows.
 - Supports iterative refinement from screenshots of the generated PowerPoint.
 
 ## Requirements
@@ -63,10 +65,23 @@ The required arrow topology format is:
 Arrow ID | From | To | Style | Meaning | Priority
 ```
 
+## Continuous Arrow Routing
+
+RouteGraph treats an arrow as a logical object, not a collection of decorative line fragments.
+
+- Straight routes use `Add-LineArrow`.
+- Simple L-shaped or Z-shaped routes use `Add-ElbowArrow`.
+- Controlled multi-bend routes use `Add-PolylineArrow`.
+- Dashed routes should remain one shape so the dash pattern does not restart at every bend.
+- Multiple shapes are reserved for true branching junctions or intentional occlusion breaks.
+
+The templates cast PowerPoint COM line weights and freeform coordinates to `[single]` for compatibility with PowerShell 7.
+
 ## Repository Layout
 
 - `SKILL.md`: skill entry point and operating rules.
 - `assets/templates/`: reusable PowerShell COM drawing templates.
+- `assets/templates/continuous_arrow_regression.ps1`: regression deck covering straight, elbow, polyline, and true-branch routes.
 - `assets/style_presets/`: visual style presets.
 - `assets/examples/`: lightweight example notes.
 - `references/`: focused guidance for arrows, text normalization, PowerPoint COM, and second-pass review.
