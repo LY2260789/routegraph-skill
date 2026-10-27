@@ -1,5 +1,6 @@
 *.pptx
 !assets/examples/instrument_reconstruction/legacy_reference.pptx
+!assets/examples/reconstruction_workflow/workflow.pptx
 *.tmp
 *.log
 __pycache__/
