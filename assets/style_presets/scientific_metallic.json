@@ -1,0 +1,13 @@
+{
+  "id": "scientific_metallic",
+  "status": "implemented",
+  "materials": {
+    "steel": {"base":"A9AFB3","light":"E5E9EC","dark":"6B747B","rim":"BEC6CB","inside":"59646C","bore":"252E35"},
+    "gray_polymer": {"base":"7A807D","light":"979E99","dark":"535C56","rim":"838E87","inside":"3F4D46","bore":"25312B"},
+    "blue_polymer": {"base":"168FAC","light":"46B4CE","dark":"076980","rim":"35A8C3","inside":"145264","bore":"09323D"}
+  },
+  "reserved_styles": {
+    "scientific_flat": "Phase 4: same geometry, solid material fills and clear outlines",
+    "anime_tech": "Design only: shared geometry, discrete shading and stronger outlines"
+  }
+}

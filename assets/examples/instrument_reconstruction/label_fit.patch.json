@@ -1,0 +1,195 @@
+{
+  "source_scene_sha256": "6f17d43c7d8dd60187cdc5b8d818ce55e6d12fdd1124157f64e53055ca9cd764",
+  "changes": [
+    {
+      "component_id": "guide_plate",
+      "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+      "set": {
+        "label_anchor": {
+          "box": [
+            402.6,
+            377.4,
+            152,
+            40
+          ],
+          "start": [
+            460,
+            365.0
+          ],
+          "target": [
+            435.6,
+            301.6
+          ],
+          "font_size": 23
+        }
+      }
+    },
+    {
+      "component_id": "fitting_pipe",
+      "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+      "set": {
+        "label_anchor": {
+          "box": [
+            242,
+            120,
+            268,
+            40
+          ],
+          "start": [
+            348.2,
+            157.0
+          ],
+          "target": [
+            369.2,
+            242.2
+          ],
+          "font_size": 23
+        }
+      }
+    },
+    {
+      "component_id": "ground_collar",
+      "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+      "set": {
+        "label_anchor": {
+          "box": [
+            202,
+            402,
+            260,
+            40
+          ],
+          "start": [
+            302,
+            391.8
+          ],
+          "target": [
+            281.4,
+            326.6
+          ],
+          "font_size": 23
+        }
+      }
+    },
+    {
+      "component_id": "spacer",
+      "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+      "set": {
+        "label_anchor": {
+          "box": [
+            110,
+            152.4,
+            216,
+            40
+          ],
+          "start": [
+            194.2,
+            191.4
+          ],
+          "target": [
+            220.6,
+            274.8
+          ],
+          "font_size": 23
+        }
+      }
+    },
+    {
+      "component_id": "tungsten_wire",
+      "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+      "set": {
+        "label_anchor": {
+          "box": [
+            44.6,
+            191.0,
+            174,
+            40
+          ],
+          "start": [
+            111.4,
+            230
+          ],
+          "target": [
+            126,
+            322.2
+          ],
+          "font_size": 23
+        }
+      }
+    },
+    {
+      "component_id": "collection_electrodes",
+      "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+      "set": {
+        "label_anchor": {
+          "box": [
+            705.6,
+            27.6,
+            280,
+            40
+          ],
+          "start": [
+            805.0,
+            66.8
+          ],
+          "target": [
+            884.4,
+            149.6
+          ],
+          "font_size": 23,
+          "additional_targets": [
+            [
+              844,
+              218
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "component_id": "cassette",
+      "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+      "set": {
+        "label_anchor": {
+          "box": [
+            515.6,
+            88.6,
+            250,
+            40
+          ],
+          "start": [
+            607.2,
+            126
+          ],
+          "target": [
+            630.8,
+            210
+          ],
+          "font_size": 23
+        }
+      }
+    },
+    {
+      "component_id": "collection_plate",
+      "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+      "set": {
+        "label_anchor": {
+          "box": [
+            594.8,
+            372.8,
+            208,
+            40
+          ],
+          "start": [
+            670.8,
+            363.2
+          ],
+          "target": [
+            701.6,
+            324.6
+          ],
+          "font_size": 23
+        }
+      }
+    }
+  ]
+}

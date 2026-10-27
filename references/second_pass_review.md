@@ -34,7 +34,7 @@ vs.
 - 是否斜穿框；
 - 是否压住文字；
 - 是否和其他箭头混淆；
-- 是否该使用分段折线；
+- 是否该使用单个连续折线对象；
 - 箭头头部是否在正确端点。
 
 ### 3. Panel 结构
@@ -78,7 +78,7 @@ Second-pass Review
    - B1: B.Counterfactual conc. → C.Counterfactual PM2.5, correct / incorrect
 
 2. Arrow routing
-   - B→C should use segmented dashed route instead of diagonal line.
+   - B→C should use one continuous dashed polyline instead of a diagonal line.
 
 3. Text
    - PM2.5 simplification is acceptable.

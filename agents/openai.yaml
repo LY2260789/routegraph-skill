@@ -1,4 +1,4 @@
 interface:
   display_name: "RouteGraph"
-  short_description: "Generate editable technical route diagrams"
-  default_prompt: "Use $routegraph to generate an editable PowerPoint technical route diagram from a figure, sketch, or text description."
+  short_description: "Editable scientific diagrams and instrument figures"
+  default_prompt: "Use $routegraph to reconstruct a scientific diagram or visible instrument exterior as editable PowerPoint objects, preserving source evidence and uncertain details."
