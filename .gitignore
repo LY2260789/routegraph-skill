@@ -1,6 +1,10 @@
 *.pptx
+!assets/examples/instrument_reconstruction/legacy_reference.pptx
 *.tmp
 *.log
 __pycache__/
 .DS_Store
 Thumbs.db
+build/
+output/
+.routegraph-build/

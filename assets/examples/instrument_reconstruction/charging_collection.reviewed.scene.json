@@ -1,0 +1,1486 @@
+{
+  "schema_version": "routegraph.instrument.v1",
+  "canvas": [
+    1050,
+    488
+  ],
+  "font": "Times New Roman",
+  "projection": {
+    "type": "oblique",
+    "ellipse_ratio": 0.38,
+    "x_basis": [
+      1,
+      -0.2774108322324967
+    ],
+    "depth_basis": [
+      -1,
+      -0.4840579710144927
+    ],
+    "vertical_basis": [
+      0,
+      1
+    ]
+  },
+  "references": [
+    {
+      "reference_id": "legacy",
+      "kind": "prior_generated_pptx",
+      "path": "legacy_reference.pptx",
+      "sha256": "9dc4577ca110b61ac6c413354a348a49521c400f8fb5df4d295b7d3bec321326",
+      "original_scientific_image_available": false
+    }
+  ],
+  "assemblies": [
+    {
+      "id": "charging",
+      "note": "Longitudinal parts share -11.5 degree local orientation from prior output"
+    },
+    {
+      "id": "collection",
+      "note": "Oblique box basis retained from prior output; complex parts retain native projected contours"
+    }
+  ],
+  "components": [
+    {
+      "component_id": "shadow_1",
+      "component_type": "ground_shadow",
+      "geometry_type": "NativeReference",
+      "geometry_parameters": {
+        "path": "legacy_reference.pptx",
+        "slide": 1,
+        "sha256": "9dc4577ca110b61ac6c413354a348a49521c400f8fb5df4d295b7d3bec321326",
+        "shape_names": [
+          "Charging body shadow"
+        ],
+        "source_bounds": [
+          154.25612613991444,
+          305.8795239409356,
+          249.48774772017114,
+          66.2409521181288
+        ]
+      },
+      "bounding_box": [
+        154.25612613991444,
+        305.8795239409356,
+        249.48774772017114,
+        66.2409521181288
+      ],
+      "relative_position": {
+        "frame": "collection",
+        "origin": [
+          154.25612613991444,
+          305.8795239409356
+        ]
+      },
+      "rotation": 0,
+      "z_order": 0,
+      "material": "gray_polymer",
+      "label": "",
+      "label_anchor": null,
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          154.25612613991444,
+          305.8795239409356,
+          249.48774772017114,
+          66.2409521181288
+        ],
+        "native_shape_names": [
+          "Charging body shadow"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "shadow_2",
+      "component_type": "ground_shadow",
+      "geometry_type": "NativeReference",
+      "geometry_parameters": {
+        "path": "legacy_reference.pptx",
+        "slide": 1,
+        "sha256": "9dc4577ca110b61ac6c413354a348a49521c400f8fb5df4d295b7d3bec321326",
+        "shape_names": [
+          "Guide assembly shadow"
+        ],
+        "source_bounds": [
+          404.9732941824934,
+          282.976143638061,
+          114.0534116350131,
+          40.04771272387797
+        ]
+      },
+      "bounding_box": [
+        404.9732941824934,
+        282.976143638061,
+        114.0534116350131,
+        40.04771272387797
+      ],
+      "relative_position": {
+        "frame": "collection",
+        "origin": [
+          404.9732941824934,
+          282.976143638061
+        ]
+      },
+      "rotation": 0,
+      "z_order": 1,
+      "material": "gray_polymer",
+      "label": "",
+      "label_anchor": null,
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          404.9732941824934,
+          282.976143638061,
+          114.0534116350131,
+          40.04771272387797
+        ],
+        "native_shape_names": [
+          "Guide assembly shadow"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "shadow_3",
+      "component_type": "ground_shadow",
+      "geometry_type": "NativeReference",
+      "geometry_parameters": {
+        "path": "legacy_reference.pptx",
+        "slide": 1,
+        "sha256": "9dc4577ca110b61ac6c413354a348a49521c400f8fb5df4d295b7d3bec321326",
+        "shape_names": [
+          "Cassette shadow"
+        ],
+        "source_bounds": [
+          570.8140906113742,
+          280.81977744923415,
+          230.3718187772516,
+          62.36044510153167
+        ]
+      },
+      "bounding_box": [
+        570.8140906113742,
+        280.81977744923415,
+        230.3718187772516,
+        62.36044510153167
+      ],
+      "relative_position": {
+        "frame": "collection",
+        "origin": [
+          570.8140906113742,
+          280.81977744923415
+        ]
+      },
+      "rotation": 0,
+      "z_order": 2,
+      "material": "gray_polymer",
+      "label": "",
+      "label_anchor": null,
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          570.8140906113742,
+          280.81977744923415,
+          230.3718187772516,
+          62.36044510153167
+        ],
+        "native_shape_names": [
+          "Cassette shadow"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "shadow_4",
+      "component_type": "ground_shadow",
+      "geometry_type": "NativeReference",
+      "geometry_parameters": {
+        "path": "legacy_reference.pptx",
+        "slide": 1,
+        "sha256": "9dc4577ca110b61ac6c413354a348a49521c400f8fb5df4d295b7d3bec321326",
+        "shape_names": [
+          "Plate shadow"
+        ],
+        "source_bounds": [
+          689.0517569297019,
+          340.7761767465108,
+          173.89648614059607,
+          40.44764650697839
+        ]
+      },
+      "bounding_box": [
+        689.0517569297019,
+        340.7761767465108,
+        173.89648614059607,
+        40.44764650697839
+      ],
+      "relative_position": {
+        "frame": "collection",
+        "origin": [
+          689.0517569297019,
+          340.7761767465108
+        ]
+      },
+      "rotation": 0,
+      "z_order": 3,
+      "material": "gray_polymer",
+      "label": "",
+      "label_anchor": null,
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          689.0517569297019,
+          340.7761767465108,
+          173.89648614059607,
+          40.44764650697839
+        ],
+        "native_shape_names": [
+          "Plate shadow"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "rear_neck",
+      "component_type": "rear_neck",
+      "geometry_type": "Cylinder",
+      "geometry_parameters": {
+        "length": 22,
+        "radius": 17.4
+      },
+      "bounding_box": [
+        482.05173579418783,
+        234.24499480005272,
+        41.454871913282545,
+        41.1239158427162
+      ],
+      "relative_position": {
+        "frame": "charging",
+        "origin": [
+          492,
+          257.0
+        ]
+      },
+      "rotation": -11.5,
+      "z_order": 10,
+      "material": "gray_polymer",
+      "label": "",
+      "label_anchor": null,
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          482.0517996564229,
+          234.2449782821711,
+          41.45482588400466,
+          41.123980443531735
+        ],
+        "native_shape_names": [
+          "Rear fitting pipe neck"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "rear_shoulder",
+      "component_type": "rear_shoulder",
+      "geometry_type": "Cylinder",
+      "geometry_parameters": {
+        "length": 52,
+        "radius": 23.2
+      },
+      "bounding_box": [
+        423.73564772558376,
+        233.1409865532805,
+        77.48478918911559,
+        59.35089430374475
+      ],
+      "relative_position": {
+        "frame": "charging",
+        "origin": [
+          437.0,
+          268
+        ]
+      },
+      "rotation": -11.5,
+      "z_order": 11,
+      "material": "gray_polymer",
+      "label": "",
+      "label_anchor": null,
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          423.735644484259,
+          233.140934730902,
+          77.48477402360788,
+          59.35096518386533
+        ],
+        "native_shape_names": [
+          "Rear fitting pipe shoulder"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "guide_backing",
+      "component_type": "guide_backing",
+      "geometry_type": "Cylinder",
+      "geometry_parameters": {
+        "length": 13.2,
+        "radius": 29.0
+      },
+      "bounding_box": [
+        411.4195596569797,
+        236.75349219441142,
+        46.09588678703557,
+        63.861358876870156
+      ],
+      "relative_position": {
+        "frame": "charging",
+        "origin": [
+          428,
+          270
+        ]
+      },
+      "rotation": -11.5,
+      "z_order": 12,
+      "material": "gray_polymer",
+      "label": "",
+      "label_anchor": null,
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          411.41952907231166,
+          236.75341584011989,
+          46.09590248529804,
+          63.861436036295686
+        ],
+        "native_shape_names": [
+          "Guide plate backing"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "guide_plate",
+      "component_type": "guide_plate",
+      "geometry_type": "HollowCylinder",
+      "geometry_parameters": {
+        "length": 8.8,
+        "radius": 24.2,
+        "inner_radius": 18.392,
+        "bore_depth": 8.8
+      },
+      "bounding_box": [
+        404.1639084034107,
+        245.2979968004041,
+        36.29552059384196,
+        52.849568576320536
+      ],
+      "relative_position": {
+        "frame": "charging",
+        "origin": [
+          418,
+          272.6
+        ]
+      },
+      "rotation": -11.5,
+      "z_order": 13,
+      "material": "blue_polymer",
+      "label": "Guide plate",
+      "label_anchor": {
+        "box": [
+          402.6,
+          377.4,
+          152,
+          40
+        ],
+        "start": [
+          460,
+          365.0
+        ],
+        "target": [
+          435.6,
+          301.6
+        ],
+        "font_size": 23
+      },
+      "relationships": [
+        {
+          "type": "assembled_with",
+          "target": "guide_backing"
+        }
+      ],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          404.16390082913995,
+          245.29797554737,
+          36.29550542833431,
+          52.84963945644111
+        ],
+        "native_shape_names": [
+          "Blue guide plate"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "guide_apertures",
+      "component_type": "guide_apertures",
+      "geometry_type": "NativeReference",
+      "geometry_parameters": {
+        "path": "legacy_reference.pptx",
+        "slide": 1,
+        "sha256": "9dc4577ca110b61ac6c413354a348a49521c400f8fb5df4d295b7d3bec321326",
+        "shape_names": [
+          "Guide upper aperture",
+          "Guide lower aperture"
+        ],
+        "source_bounds": [
+          412.2,
+          257.6,
+          9.800000000000011,
+          30.399999999999977
+        ]
+      },
+      "bounding_box": [
+        412.2,
+        257.6,
+        9.800000000000011,
+        30.399999999999977
+      ],
+      "relative_position": {
+        "frame": "charging",
+        "origin": [
+          412.2,
+          257.6
+        ]
+      },
+      "rotation": 0,
+      "z_order": 14,
+      "material": "gray_polymer",
+      "label": "",
+      "label_anchor": null,
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          412.2,
+          257.6,
+          9.800000000000011,
+          30.399999999999977
+        ],
+        "native_shape_names": [
+          "Guide upper aperture",
+          "Guide lower aperture"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "fitting_pipe",
+      "component_type": "fitting_pipe",
+      "geometry_type": "HollowCylinder",
+      "geometry_parameters": {
+        "length": 106,
+        "radius": 30.8,
+        "inner_radius": 23.408,
+        "bore_depth": 12.32
+      },
+      "bounding_box": [
+        265.5904288770681,
+        246.15191574503666,
+        139.09116093567167,
+        86.16316746170378
+      ],
+      "relative_position": {
+        "frame": "charging",
+        "origin": [
+          283.2,
+          299.8
+        ]
+      },
+      "rotation": -11.5,
+      "z_order": 15,
+      "material": "gray_polymer",
+      "label": "3D-printed fitting pipe",
+      "label_anchor": {
+        "box": [
+          242,
+          120,
+          268,
+          40
+        ],
+        "start": [
+          348.2,
+          157.0
+        ],
+        "target": [
+          369.2,
+          242.2
+        ],
+        "font_size": 23
+      },
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          265.5903805031163,
+          246.15187848679074,
+          139.09120749770443,
+          86.16325090043438
+        ],
+        "native_shape_names": [
+          "Main 3D printed fitting pipe"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "ground_collar",
+      "component_type": "ground_collar",
+      "geometry_type": "HollowCylinder",
+      "geometry_parameters": {
+        "length": 7.2,
+        "radius": 24.6,
+        "inner_radius": 18.696,
+        "bore_depth": 7.2
+      },
+      "bounding_box": [
+        262.73521267454146,
+        273.9947116875918,
+        35.18503252418708,
+        53.375127497012556
+      ],
+      "relative_position": {
+        "frame": "charging",
+        "origin": [
+          276.8,
+          301.4
+        ]
+      },
+      "rotation": -11.5,
+      "z_order": 16,
+      "material": "steel",
+      "label": "Stainless steel ground",
+      "label_anchor": {
+        "box": [
+          202,
+          402,
+          260,
+          40
+        ],
+        "start": [
+          302,
+          391.8
+        ],
+        "target": [
+          281.4,
+          326.6
+        ],
+        "font_size": 23
+      },
+      "relationships": [
+        {
+          "type": "occludes",
+          "target": "fitting_pipe"
+        },
+        {
+          "type": "assembled_with",
+          "target": "fitting_pipe"
+        }
+      ],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          262.73516156043803,
+          273.9947142271216,
+          35.185109949990135,
+          53.37521721504817
+        ],
+        "native_shape_names": [
+          "Stainless steel ground collar"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "spacer",
+      "component_type": "spacer",
+      "geometry_type": "HollowCylinder",
+      "geometry_parameters": {
+        "length": 115.2,
+        "radius": 26.2,
+        "inner_radius": 19.912,
+        "bore_depth": 10.48
+      },
+      "bounding_box": [
+        133.82042975906447,
+        272.1738795390155,
+        142.84646645419062,
+        78.28505487710788
+      ],
+      "relative_position": {
+        "frame": "charging",
+        "origin": [
+          148.8,
+          322.8
+        ]
+      },
+      "rotation": -11.5,
+      "z_order": 17,
+      "material": "blue_polymer",
+      "label": "3D-printed spacer",
+      "label_anchor": {
+        "box": [
+          110,
+          152.4,
+          216,
+          40
+        ],
+        "start": [
+          194.2,
+          191.4
+        ],
+        "target": [
+          220.6,
+          274.8
+        ],
+        "font_size": 23
+      },
+      "relationships": [
+        {
+          "type": "adjacent_to",
+          "target": "ground_collar"
+        }
+      ],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          133.8204751430601,
+          272.17385444422047,
+          142.84645128868306,
+          78.2851257572284
+        ],
+        "native_shape_names": [
+          "Blue 3D printed spacer"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "tungsten_wire",
+      "component_type": "tungsten_wire",
+      "geometry_type": "NativeReference",
+      "geometry_parameters": {
+        "path": "legacy_reference.pptx",
+        "slide": 1,
+        "sha256": "9dc4577ca110b61ac6c413354a348a49521c400f8fb5df4d295b7d3bec321326",
+        "shape_names": [
+          "Tungsten wire visible tip",
+          "Tungsten wire central core"
+        ],
+        "source_bounds": [
+          123.99999999999999,
+          322.2,
+          32.000000000000014,
+          6.800000000000011
+        ]
+      },
+      "bounding_box": [
+        123.99999999999999,
+        322.2,
+        32.000000000000014,
+        6.800000000000011
+      ],
+      "relative_position": {
+        "frame": "charging",
+        "origin": [
+          123.99999999999999,
+          322.2
+        ]
+      },
+      "rotation": 0,
+      "z_order": 18,
+      "material": "gray_polymer",
+      "label": "Tungsten wire",
+      "label_anchor": {
+        "box": [
+          44.6,
+          191.0,
+          174,
+          40
+        ],
+        "start": [
+          111.4,
+          230
+        ],
+        "target": [
+          126,
+          322.2
+        ],
+        "font_size": 23
+      },
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          123.99999999999999,
+          322.2,
+          32.000000000000014,
+          6.800000000000011
+        ],
+        "native_shape_names": [
+          "Tungsten wire visible tip",
+          "Tungsten wire central core"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "collection_electrodes",
+      "component_type": "collection_electrodes",
+      "geometry_type": "NativeReference",
+      "geometry_parameters": {
+        "path": "legacy_reference.pptx",
+        "slide": 1,
+        "sha256": "9dc4577ca110b61ac6c413354a348a49521c400f8fb5df4d295b7d3bec321326",
+        "shape_names": [
+          "Upper collection electrode top",
+          "Upper electrode edge",
+          "Upper electrode narrow rail",
+          "Lower collection electrode top",
+          "Lower electrode edge",
+          "Lower electrode inner cutout",
+          "Electrode post 1",
+          "Electrode post 2",
+          "Electrode post 3",
+          "Electrode post 4"
+        ],
+        "source_bounds": [
+          786.0,
+          123.99999999999999,
+          176.0000787401575,
+          134.0000787401575
+        ]
+      },
+      "bounding_box": [
+        786.0,
+        123.99999999999999,
+        176.0000787401575,
+        134.0000787401575
+      ],
+      "relative_position": {
+        "frame": "collection",
+        "origin": [
+          786.0,
+          123.99999999999999
+        ]
+      },
+      "rotation": 0,
+      "z_order": 20,
+      "material": "steel",
+      "label": "Collection electrodes",
+      "label_anchor": {
+        "box": [
+          705.6,
+          27.6,
+          280,
+          40
+        ],
+        "start": [
+          805.0,
+          66.8
+        ],
+        "target": [
+          884.4,
+          149.6
+        ],
+        "font_size": 23,
+        "additional_targets": [
+          [
+            844,
+            218
+          ]
+        ]
+      },
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          786.0,
+          123.99999999999999,
+          176.0000787401575,
+          134.0000787401575
+        ],
+        "native_shape_names": [
+          "Upper collection electrode top",
+          "Upper electrode edge",
+          "Upper electrode narrow rail",
+          "Lower collection electrode top",
+          "Lower electrode edge",
+          "Lower electrode inner cutout",
+          "Electrode post 1",
+          "Electrode post 2",
+          "Electrode post 3",
+          "Electrode post 4"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "rear_socket",
+      "component_type": "rear_socket",
+      "geometry_type": "Cylinder",
+      "geometry_parameters": {
+        "length": 16.4,
+        "radius": 15.0
+      },
+      "bounding_box": [
+        768.7862479958965,
+        205.48948899736956,
+        34.992195821595374,
+        36.50056936986209
+      ],
+      "relative_position": {
+        "frame": "collection",
+        "origin": [
+          778.4,
+          226
+        ]
+      },
+      "rotation": -16,
+      "z_order": 30,
+      "material": "gray_polymer",
+      "label": "",
+      "label_anchor": null,
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          768.7862534420623,
+          205.48948061972658,
+          34.99221752532401,
+          36.50064505975945
+        ],
+        "native_shape_names": [
+          "Cassette rear tubular socket"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "cassette",
+      "component_type": "cassette",
+      "geometry_type": "Cuboid",
+      "geometry_parameters": {
+        "width": 151.4,
+        "height": 58.6,
+        "depth": 69
+      },
+      "bounding_box": [
+        578.0,
+        186.6,
+        220.39999999999998,
+        134.00000000000003
+      ],
+      "relative_position": {
+        "frame": "collection",
+        "origin": [
+          647,
+          262
+        ]
+      },
+      "rotation": 0,
+      "z_order": 31,
+      "material": "gray_polymer",
+      "label": "3D-printed cassette",
+      "label_anchor": {
+        "box": [
+          515.6,
+          88.6,
+          250,
+          40
+        ],
+        "start": [
+          607.2,
+          126
+        ],
+        "target": [
+          630.8,
+          210
+        ],
+        "font_size": 23
+      },
+      "relationships": [
+        {
+          "type": "occludes",
+          "target": "rear_socket"
+        },
+        {
+          "type": "adjacent_to",
+          "target": "collection_plate"
+        }
+      ],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          578.0,
+          186.4,
+          220.40007874015748,
+          134.00007874015748
+        ],
+        "native_shape_names": [
+          "Cassette left wall",
+          "Cassette front wall",
+          "Cassette lid"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "cassette_features",
+      "component_type": "cassette_features",
+      "geometry_type": "NativeReference",
+      "geometry_parameters": {
+        "path": "legacy_reference.pptx",
+        "slide": 1,
+        "sha256": "9dc4577ca110b61ac6c413354a348a49521c400f8fb5df4d295b7d3bec321326",
+        "shape_names": [
+          "Cassette upper stepped edge",
+          "Cassette top right notch",
+          "Cassette lower front ledge",
+          "Cassette plate insertion slot",
+          "Cassette slot lip",
+          "Lid long recess",
+          "Lid vent rib 0",
+          "Lid vent rib 1",
+          "Lid vent rib 2",
+          "Lid vent rib 3",
+          "Lid vent rib 4",
+          "Lid vent rib 5",
+          "Lid vent rib 6",
+          "Lid vent rib 7",
+          "Lid vent rib 8",
+          "Lid vent rib 9",
+          "Lid vent rib 10",
+          "Lid vent rib 11",
+          "Lid vent rib 12",
+          "Lid vent rib 13",
+          "Lid vent rib 14",
+          "Lid vent rib 15",
+          "Lid vent rib 16",
+          "Lid vent rib 17",
+          "Lid vent rib 18",
+          "Lid vent rib 19"
+        ],
+        "source_bounds": [
+          631.0,
+          184.2,
+          167.0000787401575,
+          135.80007874015752
+        ]
+      },
+      "bounding_box": [
+        631.0,
+        184.2,
+        167.0000787401575,
+        135.80007874015752
+      ],
+      "relative_position": {
+        "frame": "collection",
+        "origin": [
+          631.0,
+          184.2
+        ]
+      },
+      "rotation": 0,
+      "z_order": 32,
+      "material": "gray_polymer",
+      "label": "",
+      "label_anchor": null,
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          631.0,
+          184.2,
+          167.0000787401575,
+          135.80007874015752
+        ],
+        "native_shape_names": [
+          "Cassette upper stepped edge",
+          "Cassette top right notch",
+          "Cassette lower front ledge",
+          "Cassette plate insertion slot",
+          "Cassette slot lip",
+          "Lid long recess",
+          "Lid vent rib 0",
+          "Lid vent rib 1",
+          "Lid vent rib 2",
+          "Lid vent rib 3",
+          "Lid vent rib 4",
+          "Lid vent rib 5",
+          "Lid vent rib 6",
+          "Lid vent rib 7",
+          "Lid vent rib 8",
+          "Lid vent rib 9",
+          "Lid vent rib 10",
+          "Lid vent rib 11",
+          "Lid vent rib 12",
+          "Lid vent rib 13",
+          "Lid vent rib 14",
+          "Lid vent rib 15",
+          "Lid vent rib 16",
+          "Lid vent rib 17",
+          "Lid vent rib 18",
+          "Lid vent rib 19"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "inlet_tube",
+      "component_type": "inlet_tube",
+      "geometry_type": "HollowCylinder",
+      "geometry_parameters": {
+        "length": 34,
+        "radius": 13.0,
+        "inner_radius": 9.88,
+        "bore_depth": 5.2
+      },
+      "bounding_box": [
+        577.4636788317993,
+        255.36455064194996,
+        49.114120430229946,
+        36.47105118261436
+      ],
+      "relative_position": {
+        "frame": "collection",
+        "origin": [
+          585.6,
+          278
+        ]
+      },
+      "rotation": -15,
+      "z_order": 33,
+      "material": "gray_polymer",
+      "label": "",
+      "label_anchor": null,
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          577.4637169967336,
+          255.36447575019574,
+          49.114140809682226,
+          36.47112723976605
+        ],
+        "native_shape_names": [
+          "Cassette inlet tube"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    },
+    {
+      "component_id": "collection_plate",
+      "component_type": "collection_plate",
+      "geometry_type": "NativeReference",
+      "geometry_parameters": {
+        "path": "legacy_reference.pptx",
+        "slide": 1,
+        "sha256": "9dc4577ca110b61ac6c413354a348a49521c400f8fb5df4d295b7d3bec321326",
+        "shape_names": [
+          "Collection plate left thickness",
+          "Collection plate front thickness",
+          "Collection plate top",
+          "Collection plate groove 0",
+          "Collection plate groove 1",
+          "Collection plate groove 2",
+          "Collection plate groove 3",
+          "Collection plate groove 4",
+          "Collection plate groove 5",
+          "Collection plate groove 6",
+          "Collection plate groove 7",
+          "Collection plate groove 8",
+          "Collection plate groove 9",
+          "Collection plate groove 10",
+          "Collection plate groove 11",
+          "Collection plate groove 12",
+          "Collection plate raised handle",
+          "Collection plate handle thickness",
+          "Collection plate right lug",
+          "Collection plate left green contact",
+          "Collection plate right green contact"
+        ],
+        "source_bounds": [
+          688.4,
+          284.4,
+          170.39999999999998,
+          93.60000000000002
+        ]
+      },
+      "bounding_box": [
+        688.4,
+        284.4,
+        170.39999999999998,
+        93.60000000000002
+      ],
+      "relative_position": {
+        "frame": "collection",
+        "origin": [
+          688.4,
+          284.4
+        ]
+      },
+      "rotation": 0,
+      "z_order": 34,
+      "material": "gray_polymer",
+      "label": "Collection plate",
+      "label_anchor": {
+        "box": [
+          594.8,
+          372.8,
+          208,
+          40
+        ],
+        "start": [
+          670.8,
+          363.2
+        ],
+        "target": [
+          701.6,
+          324.6
+        ],
+        "font_size": 23
+      },
+      "relationships": [],
+      "confidence": 0.6,
+      "source_reference": {
+        "reference_id": "legacy",
+        "evidence": "legacy_output",
+        "bounding_box": [
+          688.4,
+          284.4,
+          170.39999999999998,
+          93.60000000000002
+        ],
+        "native_shape_names": [
+          "Collection plate left thickness",
+          "Collection plate front thickness",
+          "Collection plate top",
+          "Collection plate groove 0",
+          "Collection plate groove 1",
+          "Collection plate groove 2",
+          "Collection plate groove 3",
+          "Collection plate groove 4",
+          "Collection plate groove 5",
+          "Collection plate groove 6",
+          "Collection plate groove 7",
+          "Collection plate groove 8",
+          "Collection plate groove 9",
+          "Collection plate groove 10",
+          "Collection plate groove 11",
+          "Collection plate groove 12",
+          "Collection plate raised handle",
+          "Collection plate handle thickness",
+          "Collection plate right lug",
+          "Collection plate left green contact",
+          "Collection plate right green contact"
+        ],
+        "note": "Migrated from prior generated output, original paper image not accessible"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "id": "panel_a",
+      "text": "(a)",
+      "box": [
+        36.6,
+        9.6,
+        40,
+        32
+      ],
+      "font_size": 25,
+      "bold": false
+    },
+    {
+      "id": "panel_b",
+      "text": "(b)",
+      "box": [
+        514.4,
+        9.6,
+        40,
+        32
+      ],
+      "font_size": 25,
+      "bold": false
+    },
+    {
+      "id": "charging",
+      "text": "Charging section",
+      "box": [
+        223.0,
+        433.2,
+        252,
+        34
+      ],
+      "font_size": 24.4,
+      "bold": true
+    },
+    {
+      "id": "collection",
+      "text": "Collection section",
+      "box": [
+        683.6,
+        433.2,
+        268,
+        34
+      ],
+      "font_size": 24.4,
+      "bold": true
+    }
+  ],
+  "repair_history": [
+    {
+      "source_scene_sha256": "6f17d43c7d8dd60187cdc5b8d818ce55e6d12fdd1124157f64e53055ca9cd764",
+      "changes": [
+        {
+          "component_id": "guide_plate",
+          "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+          "set": {
+            "label_anchor": {
+              "box": [
+                402.6,
+                377.4,
+                152,
+                40
+              ],
+              "start": [
+                460,
+                365.0
+              ],
+              "target": [
+                435.6,
+                301.6
+              ],
+              "font_size": 23
+            }
+          }
+        },
+        {
+          "component_id": "fitting_pipe",
+          "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+          "set": {
+            "label_anchor": {
+              "box": [
+                242,
+                120,
+                268,
+                40
+              ],
+              "start": [
+                348.2,
+                157.0
+              ],
+              "target": [
+                369.2,
+                242.2
+              ],
+              "font_size": 23
+            }
+          }
+        },
+        {
+          "component_id": "ground_collar",
+          "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+          "set": {
+            "label_anchor": {
+              "box": [
+                202,
+                402,
+                260,
+                40
+              ],
+              "start": [
+                302,
+                391.8
+              ],
+              "target": [
+                281.4,
+                326.6
+              ],
+              "font_size": 23
+            }
+          }
+        },
+        {
+          "component_id": "spacer",
+          "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+          "set": {
+            "label_anchor": {
+              "box": [
+                110,
+                152.4,
+                216,
+                40
+              ],
+              "start": [
+                194.2,
+                191.4
+              ],
+              "target": [
+                220.6,
+                274.8
+              ],
+              "font_size": 23
+            }
+          }
+        },
+        {
+          "component_id": "tungsten_wire",
+          "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+          "set": {
+            "label_anchor": {
+              "box": [
+                44.6,
+                191.0,
+                174,
+                40
+              ],
+              "start": [
+                111.4,
+                230
+              ],
+              "target": [
+                126,
+                322.2
+              ],
+              "font_size": 23
+            }
+          }
+        },
+        {
+          "component_id": "collection_electrodes",
+          "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+          "set": {
+            "label_anchor": {
+              "box": [
+                705.6,
+                27.6,
+                280,
+                40
+              ],
+              "start": [
+                805.0,
+                66.8
+              ],
+              "target": [
+                884.4,
+                149.6
+              ],
+              "font_size": 23,
+              "additional_targets": [
+                [
+                  844,
+                  218
+                ]
+              ]
+            }
+          }
+        },
+        {
+          "component_id": "cassette",
+          "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+          "set": {
+            "label_anchor": {
+              "box": [
+                515.6,
+                88.6,
+                250,
+                40
+              ],
+              "start": [
+                607.2,
+                126
+              ],
+              "target": [
+                630.8,
+                210
+              ],
+              "font_size": 23
+            }
+          }
+        },
+        {
+          "component_id": "collection_plate",
+          "reason": "Reserve explicit label box height for native rendering; renderer disables inherited text auto-size",
+          "set": {
+            "label_anchor": {
+              "box": [
+                594.8,
+                372.8,
+                208,
+                40
+              ],
+              "start": [
+                670.8,
+                363.2
+              ],
+              "target": [
+                701.6,
+                324.6
+              ],
+              "font_size": 23
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

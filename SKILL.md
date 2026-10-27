@@ -1,6 +1,6 @@
 ---
 name: routegraph
-description: Generate editable PowerPoint technical route diagrams from paper figures, screenshots, sketches, or text descriptions using PowerShell and PowerPoint COM. Use when Codex needs to reproduce or draft research route maps, multi-panel technical workflows, AI/ML method diagrams, counterfactual analysis frameworks, or revise an existing generated diagram from a screenshot with special attention to arrow topology, routing, labels, and editable PPT output.
+description: Generate editable PowerPoint technical route diagrams and reconstruct scientific instrument figures using native shapes through PowerShell and PowerPoint COM. Use for research workflows, paper schematics, exploded views, and reference-based instrument illustrations where topology, component structure and editability matter. Instrument reconstruction supports semantic scenes, cylinders, hollow cylinders, cuboids and detailed panels; photo interpretation remains an Agent review task.
 ---
 
 # RouteGraph
@@ -11,9 +11,22 @@ Create editable PowerPoint technical route diagrams, not flattened screenshots. 
 
 RouteGraph optimizes for correct scientific and workflow logic first. Visual polish is secondary to arrow topology, readable layout, stable text, and editability.
 
+## Instrument reconstruction mode
+
+For instrument diagrams, exploded views, or instrument photographs, read [references/instrument_reconstruction.md](references/instrument_reconstruction.md). Use the scene compiler and existing COM renderer described there. Keep the technical-route workflow below for ordinary diagrams.
+
+- Inspect accessible references before creating a scene. Separate visible structure, justified simplification and unverified inference. Do not render an unknown interior as established fact.
+- Use semantic components before geometry. Cylinder, HollowCylinder, Cuboid and Panel are implemented. NativeReference preserves selected editable components from an existing PPTX for incremental migration; it is not an image or SVG fallback.
+- For an actual instrument photograph, read [references/photo_exterior.md](references/photo_exterior.md). Keep visible exterior features and record uncertainty; do not merge different panel configurations from multiple photographs.
+- Scientific Metallic is implemented. Scientific Flat and Anime Tech are reserved interfaces, not completed presets.
+- Render previews locally, inspect them and run structural checks. Apply explicit local scene patches when needed. Ask for a screenshot only if local rendering is unavailable.
+- Routegraph owns scientific structure, parametric geometry and native COM rendering. General presentation tools may validate the resulting file; they do not need to redraw it with a second engine. See [the audited call chain](references/reconstruction_audit.md).
+- Do not claim automated OCR, photo segmentation, internal reconstruction, physical CAD accuracy, or reference fidelity beyond the available evidence.
+
 ## Workflow
 
 1. Understand the input.
+   - For reference images, read `references/reference_reconstruction.md` for transparency, photographic insets and source-parameter handling.
    - For an uploaded figure or sketch, identify panels, reading order, text blocks, boxes, model blocks, result blocks, background regions, and arrows.
    - For a text-only request, infer the same structure before writing code.
    - If the diagram is complex, read `references/prompts/image_to_structure.md`.
@@ -41,7 +54,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
 5. Iterate from screenshots.
-   - Ask the user to return a screenshot of the generated PPT.
+   - Export a PNG with PowerPoint COM and inspect it when local rendering is available. Otherwise ask the user to return a screenshot.
    - On revision, inspect arrows first, then layout, then text and styling.
    - If revising from a screenshot, read `references/prompts/screenshot_revision.md`.
 
@@ -100,4 +113,4 @@ When generating a diagram script, include:
 2. The arrow topology table.
 3. The PowerShell script or a path to the generated `.ps1` file.
 4. The run command.
-5. A request for the generated PPT screenshot so RouteGraph can perform the second-pass review.
+5. The rendered preview and review outcome, or a request for a screenshot when local rendering is unavailable.
