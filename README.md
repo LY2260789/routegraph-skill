@@ -4,6 +4,14 @@ RouteGraph is a Codex skill for turning technical route diagrams, paper figures,
 
 It is designed for scientific and engineering workflows where the final output should be native PowerPoint shapes, text boxes, and connectors rather than a flattened screenshot.
 
+## Technical route example
+
+![RouteGraph reference-to-PowerPoint workflow](assets/examples/reconstruction_workflow/preview.png)
+
+[Download the editable PowerPoint](assets/examples/reconstruction_workflow/workflow.pptx) · [View the drawing script and example](assets/examples/reconstruction_workflow/)
+
+This example shows the reference-to-output workflow, including local correction after review. Text, panels and arrows are native editable objects. Reading the reference and checking its scientific meaning remain Agent tasks.
+
 ## What It Does
 
 - Guides the Agent to identify panel structure, text, components and arrows from an input figure or description; this is not an automatic OCR or segmentation engine.
